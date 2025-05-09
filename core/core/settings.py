@@ -131,7 +131,7 @@ STATIC_ROOT = BASE_DIR / "static"
 
 # Include DJANGO_VITE_ASSETS_PATH into STATICFILES_DIRS to be copied inside
 # when run command python manage.py collectstatic
-# STATICFILES_DIRS = [DJANGO_VITE_ASSETS_PATH]
+STATICFILES_DIRS = [DJANGO_VITE_ASSETS_PATH]
 # [
 #     os.path.join(BASE_DIR, 'frontend/static'),
 # ]

@@ -1,14 +1,23 @@
 <template>
+ 
     <div>
-      <h1>Django+inertia+vue</h1>
-      hello vue {{ tevents }} ...
+      <h1>{{events }} ...</h1>
+      
     </div>
   </template>
   
   <script setup>
-  // ✅ On déclare la prop correctement avec `defineProps`
+  // import { onMounted } from 'vue';
+
+
+  
   const props = defineProps({
-    tevents: String
+    events: String
   })
+
+ 
+//   onMounted(() => {
+//   document.title = "Ma page Vue.js";
+// });
   </script>
   
