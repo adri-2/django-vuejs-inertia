@@ -1,8 +1,5 @@
-# views.py
 from inertia import render
+# from .models import Event
 
-def dashboard(request):
-    return render(request, "Dashboard", props={
-        "user": request.user.username,
-        "notifications": 5,
-    })
+def index(request):
+  return render(request, 'Index', props={'tevents': "django xhello"})
